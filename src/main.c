@@ -1,5 +1,5 @@
-#include "ctr_crypto.h"
-#include "utils_crypto.h"
+#include "tbc16_ctr.h"
+#include "tbc16_ctr_utils.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,7 +9,7 @@ int main(int argc, char const *argv[]) {
     int option = 0;
     char plaintext_filename[60];
     char ciphertext_filename[60];
-    CTRStatus ctr_status;
+    TBC16_CTRStatus tbc16_ctr_status;
 
     srand(time(NULL));
 
@@ -31,35 +31,35 @@ int main(int argc, char const *argv[]) {
 
         switch (option) {
             case 1:
-                ctr_status = sbox_generator();
-                if (CTR_OK == ctr_status) printf("\n>>> La S-Box se guardo correctamente");
-                show_possible_error(ctr_status);
+                tbc16_ctr_status = sbox_generator();
+                if (CTR_OK == tbc16_ctr_status) printf("\n>>> La S-Box se guardo correctamente");
+                show_possible_error(tbc16_ctr_status);
                 wait_key();
                 break;
             case 2:
-                ctr_status = secret_key_generator();
-                if (CTR_OK == ctr_status) printf("\n>>> La llave secreta se guardo correctamente");
-                show_possible_error(ctr_status);
+                tbc16_ctr_status = secret_key_generator();
+                if (CTR_OK == tbc16_ctr_status) printf("\n>>> La llave secreta se guardo correctamente");
+                show_possible_error(tbc16_ctr_status);
                 wait_key();
                 break;
             case 3:
-                ctr_status = pbox_generator();
-                if (CTR_OK == ctr_status) printf("\n>>> La P-Box se guardo correctamente");
-                show_possible_error(ctr_status);
+                tbc16_ctr_status = pbox_generator();
+                if (CTR_OK == tbc16_ctr_status) printf("\n>>> La P-Box se guardo correctamente");
+                show_possible_error(tbc16_ctr_status);
                 wait_key();
                 break;
             case 4:
                 printf("\n>> Escribe el nombre del archivo con el plaintext: ");
                 read_string(sizeof(plaintext_filename), plaintext_filename);
-                ctr_status = encrypt_ctr(plaintext_filename);
-                show_possible_error(ctr_status);
+                tbc16_ctr_status = encrypt_ctr(plaintext_filename);
+                show_possible_error(tbc16_ctr_status);
                 wait_key();
                 break;
             case 5:
                 printf("\n>> Escribe el nombre del archivo con el ciphertext: ");
                 read_string(sizeof(ciphertext_filename), ciphertext_filename);
-                ctr_status = decrypt_ctr(ciphertext_filename); // nombre del ciphertext
-                show_possible_error(ctr_status);
+                tbc16_ctr_status = decrypt_ctr(ciphertext_filename); // nombre del ciphertext
+                show_possible_error(tbc16_ctr_status);
                 wait_key();
                 break;
             case 6:
