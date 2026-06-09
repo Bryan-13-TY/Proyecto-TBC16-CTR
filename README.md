@@ -18,15 +18,29 @@ Proyecto-TBC16-CTR
 │   ├── _lab08_introcrypto_20260423.pdf
 │   └──  _lab09_introcrypto_20260430.pdf
 ├── include/
-│   ├── ctr_crypto.h
-│   ├── ctr_status.h
-│   └── utils_crypto.h
+│   ├── tbc16_ctr_status.h
+│   ├── tbc16_ctr_utils.h
+│   └── tbc16_ctr.h
 ├── src/
-│   ├── ctr_crypto.c
-│   ├── ctr_status.c
 │   ├── main.c
-│   └── utils_crypto.c
+│   ├── tbc16_ctr_status.c
+│   ├── tbc16_ctr_utils.c
+│   └── tbc16_ctr.c
 ├── gitignore
 ├── Makefile
 └── README.md
 ```
+
+## Uso del cifrador
+
+- Compilar el programa
+`mingw32-make`
+
+- Correr el programa
+`mingw32-make run`
+
+- Borrar el ejecutable
+`mingw32-make clean`
+
+- Guardar estructura del programa
+`mingw32-make tree`
