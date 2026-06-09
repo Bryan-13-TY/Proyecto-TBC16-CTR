@@ -34,13 +34,18 @@ Proyecto-TBC16-CTR
 ## Uso del cifrador
 
 - Compilar el programa
-`mingw32-make`
-
+```
+mingw32-make
+```
 - Correr el programa
-`mingw32-make run`
-
+```
+mingw32-make run
+```
 - Borrar el ejecutable
-`mingw32-make clean`
-
+```
+mingw32-make clean
+```
 - Guardar estructura del programa
-`mingw32-make tree`
+```
+mingw32-make tree
+```
