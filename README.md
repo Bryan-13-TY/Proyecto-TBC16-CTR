@@ -8,14 +8,15 @@ Proyecto TBC16-CTR (Cifrador por bloques de 16 bits con el modo de operación CT
 - Cifrar un texto por bloques de 16 bits con el modo de operación CTR y codificarlo en Base64.
 - Descifrar un texto codificado en Base64 por bloques de 16 bits con el modo de operación CTR.
 
-## Caracteristicas
-- Llave secreta de 2 bytes codificada en Base64.
-- Caja de sustitución de 8 bits en hexadecimal.
-- Permutación de tamaño 8.
-- Cifrador por bloques (TBC) de 16 bits con expansión de la llave secreta.
-- Cifrador por bloques con el modo de operación CTR.
-- Codificación/decodificación en Base64 para el `ciphertext`.
-- Tamaño mínimo de 1 Kb para el `plaintext`.
+## 🎯 Características
+- ✅ Llave secreta de 2 bytes codificada en Base64 (`key.key`).
+- ✅ Caja de sustitución de 8 bits en hexadecimal (`sbox.txt`).
+- ✅ Permutación de tamaño 8 (`permutation.txt`).
+- ✅ Cifrador por bloques (TBC) de 16 bits con expansión de la llave secreta.
+- ✅ Cifrador por bloques con el modo de operación CTR.
+- ✅ Codificación/decodificación en Base64 para el ciphertext.
+- ✅ Tamaño mínimo de 1 Kb para el plaintext.
+- ✅ Manejo de errores con `TBC16_CTRStatus`.
 
 ## Estructura del proyecto
 ```
