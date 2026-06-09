@@ -7,7 +7,7 @@
 
 #define DIR_BASE "data/"
 #define PLAIN_FILENAME "plaintext.txt"
-#define SBOX_FILENAME "GEBA_sbox.txt"
+#define SBOX_FILENAME "sbox.txt"
 #define PBOX_FILENAME "permutation.txt"
 #define KEY_FILENAME "key.key"
 #define PBOX_SIZE 8
