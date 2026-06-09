@@ -32,19 +32,19 @@ int main(int argc, char const *argv[]) {
         switch (option) {
             case 1:
                 tbc16_ctr_status = sbox_generator();
-                if (CTR_OK == tbc16_ctr_status) printf("\n>>> La S-Box se guardo correctamente");
+                if (TBC16_CTR_OK == tbc16_ctr_status) printf("\n>>> La S-Box se guardo correctamente");
                 show_possible_error(tbc16_ctr_status);
                 wait_key();
                 break;
             case 2:
                 tbc16_ctr_status = secret_key_generator();
-                if (CTR_OK == tbc16_ctr_status) printf("\n>>> La llave secreta se guardo correctamente");
+                if (TBC16_CTR_OK == tbc16_ctr_status) printf("\n>>> La llave secreta se guardo correctamente");
                 show_possible_error(tbc16_ctr_status);
                 wait_key();
                 break;
             case 3:
                 tbc16_ctr_status = pbox_generator();
-                if (CTR_OK == tbc16_ctr_status) printf("\n>>> La P-Box se guardo correctamente");
+                if (TBC16_CTR_OK == tbc16_ctr_status) printf("\n>>> La P-Box se guardo correctamente");
                 show_possible_error(tbc16_ctr_status);
                 wait_key();
                 break;
