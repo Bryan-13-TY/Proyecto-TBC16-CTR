@@ -16,7 +16,7 @@ Proyecto-TBC16-CTR
 │   ├── _01projectTBC_introcrypto_20260518.pdf
 │   ├── _lab07_introcrypto_20260416b 2.pdf
 │   ├── _lab08_introcrypto_20260423.pdf
-│   └──  _lab09_introcrypto_20260430.pdf
+│   └── _lab09_introcrypto_20260430.pdf
 ├── include/
 │   ├── tbc16_ctr_status.h
 │   ├── tbc16_ctr_utils.h
