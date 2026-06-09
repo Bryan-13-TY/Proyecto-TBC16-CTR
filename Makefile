@@ -13,6 +13,9 @@ $(TARGET):
 data:
 	mkdir data 2>nul || echo data ya existe
 
+tree:
+	tree /F >tree.txt
+
 clean:
 	del $(TARGET)
 
