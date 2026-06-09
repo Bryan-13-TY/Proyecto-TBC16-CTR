@@ -33,33 +33,33 @@ int main(int argc, char const *argv[]) {
             case 1:
                 tbc16_ctr_status = sbox_generator();
                 if (TBC16_CTR_OK == tbc16_ctr_status) printf("\n>>> La S-Box se guardo correctamente");
-                show_possible_error(tbc16_ctr_status);
+                show_error_code(tbc16_ctr_status);
                 wait_key();
                 break;
             case 2:
                 tbc16_ctr_status = secret_key_generator();
                 if (TBC16_CTR_OK == tbc16_ctr_status) printf("\n>>> La llave secreta se guardo correctamente");
-                show_possible_error(tbc16_ctr_status);
+                show_error_code(tbc16_ctr_status);
                 wait_key();
                 break;
             case 3:
                 tbc16_ctr_status = pbox_generator();
                 if (TBC16_CTR_OK == tbc16_ctr_status) printf("\n>>> La P-Box se guardo correctamente");
-                show_possible_error(tbc16_ctr_status);
+                show_error_code(tbc16_ctr_status);
                 wait_key();
                 break;
             case 4:
                 printf("\n>> Escribe el nombre del archivo con el plaintext: ");
                 read_string(sizeof(plaintext_filename), plaintext_filename);
                 tbc16_ctr_status = encrypt_ctr(plaintext_filename);
-                show_possible_error(tbc16_ctr_status);
+                show_error_code(tbc16_ctr_status);
                 wait_key();
                 break;
             case 5:
                 printf("\n>> Escribe el nombre del archivo con el ciphertext: ");
                 read_string(sizeof(ciphertext_filename), ciphertext_filename);
                 tbc16_ctr_status = decrypt_ctr(ciphertext_filename); // nombre del ciphertext
-                show_possible_error(tbc16_ctr_status);
+                show_error_code(tbc16_ctr_status);
                 wait_key();
                 break;
             case 6:

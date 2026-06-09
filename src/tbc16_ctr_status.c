@@ -1,7 +1,7 @@
 #include "tbc16_ctr_status.h"
 #include <stdio.h>
 
-void show_possible_error(TBC16_CTRStatus tbc16_ctr_status) {
+void show_error_code(TBC16_CTRStatus tbc16_ctr_status) {
     if (TBC16_CTR_SBOX_OPEN_FILE_ERROR == tbc16_ctr_status) {
         printf("\n>>> Hubo un error al cargar la S-Box");
     }

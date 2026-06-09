@@ -35,8 +35,8 @@ typedef enum {
 /**
  * @brief Muestra el posible erro de algunas de la funciones para el modo CTR.
  * 
- * @param tbc16_ctr_status Posible error.
+ * @param tbc16_ctr_status Código de error.
  */
-void show_possible_error(TBC16_CTRStatus tbc16_ctr_status);
+void show_error_code(TBC16_CTRStatus tbc16_ctr_status);
 
 #endif /* TBC16_CTR_STATUS_H */
