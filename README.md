@@ -12,7 +12,7 @@ Proyecto TBC16-CTR (Cifrador por bloques de 16 bits con el modo de operación CT
 - Llave secreta de 2 bytes codificada en Base64.
 - Caja de sustitución de 8 bits en hexadecimal.
 - Permutación de tamaño 8.
-- Cifrador por bloques (TBC) de 2 bytes con expansión de la llave secreta.
+- Cifrador por bloques (TBC) de 16 bits con expansión de la llave secreta.
 - Cifrador por bloques con el modo de operación CTR.
 - Codificación/decodificación en Base64 para el ciphertext.
 
