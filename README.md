@@ -2,11 +2,19 @@
 Proyecto TBC16-CTR (Cifrador por bloques de 16 bits con el modo de operación CTR), desarrollado durante el periodo 2026/2 para la optativa de Introduction to Cryptography de la Escuela Superior de Cómputo (ESCOM-IPN) con la profesora Díaz Santiago Sandra.
 
 ## Operaciones
-- Crear una llave de 2 bytes codificada en Base64.
+- Crear una llave secreta de 2 bytes codificada en Base64.
 - Crear una Caja de Sustitución (S-Box) de 8 bits.
 - Crear una Permutación (P-Box) de tamaño 8.
 - Cifrar un texto por bloques de 16 bits con el modo de operación CTR y codificarlo en Base64.
 - Descifrar un texto codificado en Base64 por bloques de 16 bits con el modo de operación CTR.
+
+## Caracteristicas
+- Llave secreta de 2 bytes codificada en Base64.
+- Caja de sustitución de 8 bits en hexadecimal.
+- Permutación de tamaño 8.
+- Cifrador por bloques (TBC) de 2 bytes con expansión de la llave secreta.
+- Cifrador por bloques con el modo de operación CTR.
+- Codificación/decodificación en Base64 para el ciphertext.
 
 ## Estructura del proyecto
 ```
