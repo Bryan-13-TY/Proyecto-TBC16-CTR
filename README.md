@@ -14,7 +14,8 @@ Proyecto TBC16-CTR (Cifrador por bloques de 16 bits con el modo de operación CT
 - Permutación de tamaño 8.
 - Cifrador por bloques (TBC) de 16 bits con expansión de la llave secreta.
 - Cifrador por bloques con el modo de operación CTR.
-- Codificación/decodificación en Base64 para el ciphertext.
+- Codificación/decodificación en Base64 para el `ciphertext`.
+- Tamaño mínimo de 1 Kb para el `plaintext`.
 
 ## Estructura del proyecto
 ```
