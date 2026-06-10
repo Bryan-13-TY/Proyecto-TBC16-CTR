@@ -44,7 +44,6 @@ Proyecto-TBC16-CTR
 ```
 
 ## ⚠️ Manejo de errores
-
 Todas las funciones públicas devuelven un valor de tipo `TBC16_CTRStatus` a excepción de
 `show_error_code` que recibe como parámetro un valor del mismo tipo y muestra el código de
 error correspondiente.
@@ -71,7 +70,6 @@ error correspondiente.
 - `TBC16_CTR_PLAINT_OPEN_FILE_ERROR` - Error al abrir el archivo del plaintext
 
 ## 🚀 Uso del cifrador
-
 - Compilar el programa
 ```
 mingw32-make
